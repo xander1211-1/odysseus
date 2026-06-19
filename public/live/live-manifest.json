@@ -1,11 +1,24 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619143532",
-  "version": "live-20260619143532",
-  "generated_at": "2026-06-19T14:35:32.183651",
-  "timestamp": "2026-06-19T14:35:32.183651",
+  "current_live_version": "live-20260619145345",
+  "version": "live-20260619145345",
+  "generated_at": "2026-06-19T14:53:45.100449",
+  "timestamp": "2026-06-19T14:53:45.100449",
   "message": "Live manifest loaded",
   "notices": [
+    {
+      "id": "model-mode-v1",
+      "title": "Model Mode v1 added",
+      "body": "Model Mode is now a full install and management screen with Lite, Balanced, Creator, and Hybrid profiles, device recommendation, install progress, switching, and advanced model controls. Install the latest APK for the new UI code.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T00:53:00+10:00",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "omnivoice-studio-provider",
       "title": "OmniVoice Studio provider added",
@@ -84,6 +97,19 @@
   "noticeboard": {
     "notices": [
       {
+        "id": "model-mode-v1",
+        "title": "Model Mode v1 added",
+        "body": "Model Mode is now a full install and management screen with Lite, Balanced, Creator, and Hybrid profiles, device recommendation, install progress, switching, and advanced model controls. Install the latest APK for the new UI code.",
+        "date": "2026-06-20",
+        "published_at": "2026-06-20T00:53:00+10:00",
+        "platforms": [
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
         "id": "omnivoice-studio-provider",
         "title": "OmniVoice Studio provider added",
         "body": "Voice Studio now supports OmniVoice Studio as a local/free desktop-first voice workflow. Generate Lexi's voice in OmniVoice, export audio, import it into Voice Studio, then use it for voice testing or message playback. Android-native OmniVoice remains future until we confirm the engine can run or be called from Android.",
@@ -161,7 +187,7 @@
     "source": "mobile_shell_live_cache",
     "future_api": "/api/live/manifest",
     "poll_seconds": 30,
-    "live_notice_count": 4
+    "live_notice_count": 5
   },
   "feature_flags": {
     "guest_display_names": true,
@@ -176,35 +202,37 @@
   "available_assets": [],
   "model_mode_config": [
     {
-      "id": "bundled-lite",
-      "label": "Bundled Lite Model",
+      "id": "lite",
+      "label": "Lite",
       "model": "Qwen3.5-4B",
-      "status": "planned",
-      "description": "Use a bundled mobile/local-friendly model once packaged."
+      "status": "installable_profile",
+      "description": "Fast, efficient, and designed for older phones.",
+      "recommended_device": "6 to 8 GB RAM",
+      "estimated_download": "Approximately 3 to 4 GB"
     },
     {
-      "id": "byok-api",
-      "label": "BYOK API Mode",
-      "providers": [
-        "OpenAI",
-        "Anthropic",
-        "Gemini",
-        "OpenRouter"
-      ],
-      "status": "planned",
-      "description": "User supplies their own API key on-device or per account."
+      "id": "balanced",
+      "label": "Balanced",
+      "status": "recommended_profile",
+      "description": "The best balance between intelligence, speed, and battery life.",
+      "recommended_device": "8 to 12 GB RAM",
+      "estimated_download": "Approximately 5 to 6 GB"
     },
     {
-      "id": "offline-lite",
-      "label": "Offline Lite Mode",
-      "status": "planned",
-      "description": "Use cached UI and bundled model if installed."
+      "id": "creator",
+      "label": "Creator",
+      "status": "installable_profile",
+      "description": "Built for developers, artists and makers.",
+      "recommended_device": "12 GB+ RAM, desktop host recommended",
+      "estimated_download": "Local tools plus provider/model cache"
     },
     {
-      "id": "demo",
-      "label": "Demo Mode",
-      "status": "available",
-      "description": "Open the UI without private tools or heavy execution."
+      "id": "hybrid",
+      "label": "Hybrid",
+      "status": "installable_profile",
+      "description": "Lexi automatically chooses the best model for every task.",
+      "recommended_device": "8 GB+ RAM, BYOK optional",
+      "estimated_download": "Approximately 5 to 8 GB plus provider cache"
     }
   ],
   "ui_layout_config": {

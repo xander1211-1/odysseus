@@ -1,8 +1,21 @@
 {
   "ok": true,
-  "version": "live-20260619143532",
-  "generated_at": "2026-06-19T14:35:32.183651",
+  "version": "live-20260619145345",
+  "generated_at": "2026-06-19T14:53:45.100449",
   "notices": [
+    {
+      "id": "model-mode-v1",
+      "title": "Model Mode v1 added",
+      "body": "Model Mode is now a full install and management screen with Lite, Balanced, Creator, and Hybrid profiles, device recommendation, install progress, switching, and advanced model controls. Install the latest APK for the new UI code.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T00:53:00+10:00",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "omnivoice-studio-provider",
       "title": "OmniVoice Studio provider added",
