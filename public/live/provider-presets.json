@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "version": "live-20260619075756",
-  "generated_at": "2026-06-19T07:57:56.500440",
+  "version": "live-20260619091347",
+  "generated_at": "2026-06-19T09:13:47.896673",
   "providers": [
     {
       "id": "openrouter",
@@ -32,6 +32,89 @@
       "label": "Custom OpenAI-compatible",
       "base_url": "",
       "chat_endpoint": "/chat/completions"
+    }
+  ],
+  "voice_providers": [
+    {
+      "id": "none",
+      "label": "None / silent mode",
+      "status": "available",
+      "requires_api_key": false,
+      "description": "Chat remains silent. Speaker buttons stay hidden unless a voice is configured."
+    },
+    {
+      "id": "openai_tts",
+      "label": "OpenAI TTS",
+      "status": "available",
+      "requires_api_key": true,
+      "base_url": "https://api.openai.com/v1",
+      "endpoint": "/audio/speech",
+      "default_model": "gpt-4o-mini-tts",
+      "default_voice": "alloy",
+      "formats": [
+        "mp3",
+        "wav",
+        "ogg"
+      ],
+      "browser_strategy": "direct_fetch_first"
+    },
+    {
+      "id": "elevenlabs",
+      "label": "ElevenLabs",
+      "status": "available",
+      "requires_api_key": true,
+      "base_url": "https://api.elevenlabs.io/v1",
+      "endpoint": "/text-to-speech/{voice_id}",
+      "default_model": "eleven_multilingual_v2",
+      "default_voice": "",
+      "formats": [
+        "mp3"
+      ],
+      "browser_strategy": "direct_fetch_first"
+    },
+    {
+      "id": "openrouter_tts",
+      "label": "OpenRouter TTS",
+      "status": "planned",
+      "requires_api_key": true,
+      "base_url": "https://openrouter.ai/api/v1",
+      "endpoint": "",
+      "default_model": "",
+      "default_voice": "",
+      "formats": [
+        "mp3"
+      ],
+      "browser_strategy": "placeholder"
+    },
+    {
+      "id": "custom_endpoint",
+      "label": "Custom OpenAI-compatible TTS endpoint",
+      "status": "available",
+      "requires_api_key": true,
+      "base_url": "",
+      "endpoint": "/audio/speech",
+      "default_model": "",
+      "default_voice": "",
+      "formats": [
+        "mp3",
+        "wav",
+        "ogg"
+      ],
+      "browser_strategy": "direct_fetch_first"
+    },
+    {
+      "id": "piper",
+      "label": "Piper / local TTS",
+      "status": "coming_soon",
+      "requires_api_key": false,
+      "description": "Future local/offline voice option."
+    },
+    {
+      "id": "xtts",
+      "label": "XTTS",
+      "status": "coming_soon",
+      "requires_api_key": false,
+      "description": "Future local/desktop-host voice option."
     }
   ]
 }

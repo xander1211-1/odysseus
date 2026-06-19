@@ -1,17 +1,30 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619075756",
-  "version": "live-20260619075756",
-  "generated_at": "2026-06-19T07:57:56.500440",
-  "timestamp": "2026-06-19T07:57:56.500440",
+  "current_live_version": "live-20260619091347",
+  "version": "live-20260619091347",
+  "generated_at": "2026-06-19T09:13:47.896673",
+  "timestamp": "2026-06-19T09:13:47.896673",
   "message": "Live manifest loaded",
   "notices": [
+    {
+      "id": "voice-studio-v01",
+      "title": "Voice Studio v0.1",
+      "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T19:12:00+10:00",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "prototype-live-update-guest-names",
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:57:56.481439",
+      "published_at": "2026-06-19T09:13:29.048057",
       "platforms": [
         "pwa",
         "android",
@@ -72,11 +85,24 @@
   "noticeboard": {
     "notices": [
       {
+        "id": "voice-studio-v01",
+        "title": "Voice Studio v0.1",
+        "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
+        "date": "2026-06-19",
+        "published_at": "2026-06-19T19:12:00+10:00",
+        "platforms": [
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
         "id": "prototype-live-update-guest-names",
         "title": "Prototype live update test",
         "body": "Prototype live update test: guest names are now supported.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T07:57:56.481439",
+        "published_at": "2026-06-19T09:13:29.048057",
         "platforms": [
           "pwa",
           "android",
@@ -137,7 +163,7 @@
     "source": "mobile_shell_live_cache",
     "future_api": "/api/live/manifest",
     "poll_seconds": 30,
-    "live_notice_count": 3
+    "live_notice_count": 4
   },
   "feature_flags": {
     "guest_display_names": true,
@@ -231,6 +257,89 @@
       }
     }
   },
+  "voice_provider_presets": [
+    {
+      "id": "none",
+      "label": "None / silent mode",
+      "status": "available",
+      "requires_api_key": false,
+      "description": "Chat remains silent. Speaker buttons stay hidden unless a voice is configured."
+    },
+    {
+      "id": "openai_tts",
+      "label": "OpenAI TTS",
+      "status": "available",
+      "requires_api_key": true,
+      "base_url": "https://api.openai.com/v1",
+      "endpoint": "/audio/speech",
+      "default_model": "gpt-4o-mini-tts",
+      "default_voice": "alloy",
+      "formats": [
+        "mp3",
+        "wav",
+        "ogg"
+      ],
+      "browser_strategy": "direct_fetch_first"
+    },
+    {
+      "id": "elevenlabs",
+      "label": "ElevenLabs",
+      "status": "available",
+      "requires_api_key": true,
+      "base_url": "https://api.elevenlabs.io/v1",
+      "endpoint": "/text-to-speech/{voice_id}",
+      "default_model": "eleven_multilingual_v2",
+      "default_voice": "",
+      "formats": [
+        "mp3"
+      ],
+      "browser_strategy": "direct_fetch_first"
+    },
+    {
+      "id": "openrouter_tts",
+      "label": "OpenRouter TTS",
+      "status": "planned",
+      "requires_api_key": true,
+      "base_url": "https://openrouter.ai/api/v1",
+      "endpoint": "",
+      "default_model": "",
+      "default_voice": "",
+      "formats": [
+        "mp3"
+      ],
+      "browser_strategy": "placeholder"
+    },
+    {
+      "id": "custom_endpoint",
+      "label": "Custom OpenAI-compatible TTS endpoint",
+      "status": "available",
+      "requires_api_key": true,
+      "base_url": "",
+      "endpoint": "/audio/speech",
+      "default_model": "",
+      "default_voice": "",
+      "formats": [
+        "mp3",
+        "wav",
+        "ogg"
+      ],
+      "browser_strategy": "direct_fetch_first"
+    },
+    {
+      "id": "piper",
+      "label": "Piper / local TTS",
+      "status": "coming_soon",
+      "requires_api_key": false,
+      "description": "Future local/offline voice option."
+    },
+    {
+      "id": "xtts",
+      "label": "XTTS",
+      "status": "coming_soon",
+      "requires_api_key": false,
+      "description": "Future local/desktop-host voice option."
+    }
+  ],
   "poll_seconds": 30,
   "static_files": {
     "manifest": "live-manifest.json",

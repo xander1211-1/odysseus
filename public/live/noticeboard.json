@@ -1,14 +1,27 @@
 {
   "ok": true,
-  "version": "live-20260619075756",
-  "generated_at": "2026-06-19T07:57:56.500440",
+  "version": "live-20260619091347",
+  "generated_at": "2026-06-19T09:13:47.896673",
   "notices": [
+    {
+      "id": "voice-studio-v01",
+      "title": "Voice Studio v0.1",
+      "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T19:12:00+10:00",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "prototype-live-update-guest-names",
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:57:56.481439",
+      "published_at": "2026-06-19T09:13:29.048057",
       "platforms": [
         "pwa",
         "android",
