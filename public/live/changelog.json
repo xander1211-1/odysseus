@@ -1,10 +1,20 @@
 {
   "ok": true,
-  "version": "live-20260619150711",
-  "generated_at": "2026-06-19T15:07:11.569185",
+  "version": "live-20260619162138",
+  "generated_at": "2026-06-19T16:21:38.004389",
   "entries": [
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
+      "title": "Model Mode v1.1: real local model downloads",
+      "description": "Lite and Balanced now use real Qwen3 GGUF download entries. Install the latest APK to download into app-private storage, see byte progress, cancel or retry, switch safely, and keep chats, memories, themes, characters, and BYOK settings untouched. Local inference runtime is still not wired, so installed models are shown honestly as files ready for the next runtime update.",
+      "date": "2026-06-20",
+      "platforms": [
+        "android",
+        "web"
+      ]
+    },
+    {
+      "version": "live-20260619162138",
       "title": "Prototype live update test",
       "description": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
@@ -15,7 +25,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "Model Mode v1 is now functional",
       "description": "Model Mode now uses a live model catalog. Lite and Balanced show clean Coming Soon states until real local packages are published, Creator can select BYOK/provider mode, and Hybrid can select the router profile. Downloadable local models will only install after a real download and verification.",
       "date": "2026-06-20",
@@ -25,7 +35,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "Model Mode v1 added",
       "description": "Model Mode is now a full install and management screen with Lite, Balanced, Creator, and Hybrid profiles, device recommendation, install progress, switching, and advanced model controls. Install the latest APK for the new UI code.",
       "date": "2026-06-20",
@@ -35,7 +45,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "OmniVoice Studio provider added",
       "description": "Voice Studio now supports OmniVoice Studio as a local/free desktop-first voice workflow. Generate Lexi's voice in OmniVoice, export audio, import it into Voice Studio, then use it for voice testing or message playback. Android-native OmniVoice remains future until we confirm the engine can run or be called from Android.",
       "date": "2026-06-20",
@@ -45,7 +55,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "Voice Studio v0.1",
       "description": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
       "date": "2026-06-19",
@@ -55,7 +65,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "Live updates vs APK updates",
       "description": "Content, noticeboard, provider presets, and configuration can update live. Native/WebView fixes still require installing the latest APK when the manifest says an update is required.",
       "date": "2026-06-19",
@@ -65,7 +75,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "API key testing fix",
       "description": "API key testing has been improved. Provider tests now use safer defaults and accept valid provider responses even when the response body is unusual. Install the latest APK build for the Android-side bridge fix.",
       "date": "2026-06-19",
@@ -75,7 +85,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "Mobile shell test is ready",
       "description": "Use this PWA view to check phone layout, touch targets, offline cache, and remote-only tool messaging before APK packaging.",
       "date": "2026-06-17",
@@ -85,7 +95,7 @@
       ]
     },
     {
-      "version": "live-20260619150711",
+      "version": "live-20260619162138",
       "title": "Desktop tools stay visible",
       "description": "Blender, Godot, and STL tools show synced logs/assets/results on mobile, but local execution is blocked on phone and must run on the desktop host.",
       "date": "2026-06-17",
