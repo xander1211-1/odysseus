@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619075743",
-  "version": "live-20260619075743",
-  "generated_at": "2026-06-19T07:57:43.199340",
-  "timestamp": "2026-06-19T07:57:43.199340",
+  "current_live_version": "live-20260619075756",
+  "version": "live-20260619075756",
+  "generated_at": "2026-06-19T07:57:56.500440",
+  "timestamp": "2026-06-19T07:57:56.500440",
   "message": "Live manifest loaded",
   "notices": [
     {
@@ -11,7 +11,7 @@
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:57:17.246021",
+      "published_at": "2026-06-19T07:57:56.481439",
       "platforms": [
         "pwa",
         "android",
@@ -76,7 +76,7 @@
         "title": "Prototype live update test",
         "body": "Prototype live update test: guest names are now supported.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T07:57:17.246021",
+        "published_at": "2026-06-19T07:57:56.481439",
         "platforms": [
           "pwa",
           "android",

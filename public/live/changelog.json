@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "version": "live-20260619075743",
-  "generated_at": "2026-06-19T07:57:43.199340",
+  "version": "live-20260619075756",
+  "generated_at": "2026-06-19T07:57:56.500440",
   "entries": [
     {
-      "version": "live-20260619075743",
+      "version": "live-20260619075756",
       "title": "Prototype live update test",
       "description": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "version": "live-20260619075743",
+      "version": "live-20260619075756",
       "title": "Live updates vs APK updates",
       "description": "Content, noticeboard, provider presets, and configuration can update live. Native/WebView fixes still require installing the latest APK when the manifest says an update is required.",
       "date": "2026-06-19",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "version": "live-20260619075743",
+      "version": "live-20260619075756",
       "title": "API key testing fix",
       "description": "API key testing has been improved. Provider tests now use safer defaults and accept valid provider responses even when the response body is unusual. Install the latest APK build for the Android-side bridge fix.",
       "date": "2026-06-19",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "version": "live-20260619075743",
+      "version": "live-20260619075756",
       "title": "Mobile shell test is ready",
       "description": "Use this PWA view to check phone layout, touch targets, offline cache, and remote-only tool messaging before APK packaging.",
       "date": "2026-06-17",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "version": "live-20260619075743",
+      "version": "live-20260619075756",
       "title": "Desktop tools stay visible",
       "description": "Blender, Godot, and STL tools show synced logs/assets/results on mobile, but local execution is blocked on phone and must run on the desktop host.",
       "date": "2026-06-17",

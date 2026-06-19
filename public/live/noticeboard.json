@@ -1,14 +1,14 @@
 {
   "ok": true,
-  "version": "live-20260619075743",
-  "generated_at": "2026-06-19T07:57:43.199340",
+  "version": "live-20260619075756",
+  "generated_at": "2026-06-19T07:57:56.500440",
   "notices": [
     {
       "id": "prototype-live-update-guest-names",
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:57:17.246021",
+      "published_at": "2026-06-19T07:57:56.481439",
       "platforms": [
         "pwa",
         "android",
