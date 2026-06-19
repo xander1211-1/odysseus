@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "version": "live-20260619040908",
+  "generated_at": "2026-06-19T04:09:08.833219",
+  "providers": [
+    {
+      "id": "openrouter",
+      "label": "OpenRouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "chat_endpoint": "/chat/completions"
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "chat_endpoint": "/chat/completions"
+    },
+    {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "base_url": "https://api.anthropic.com",
+      "chat_endpoint": "/v1/messages"
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "chat_endpoint": "/v1beta/models"
+    },
+    {
+      "id": "custom-openai-compatible",
+      "label": "Custom OpenAI-compatible",
+      "base_url": "",
+      "chat_endpoint": "/chat/completions"
+    }
+  ]
+}

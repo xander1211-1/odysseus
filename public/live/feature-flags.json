@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "version": "live-20260619040908",
+  "generated_at": "2026-06-19T04:09:08.833219",
+  "feature_flags": {
+    "guest_display_names": true,
+    "mobile_in_app_routing": true,
+    "guest_local_sqlite": true,
+    "static_live_updates": true,
+    "remote_host_required": false
+  }
+}

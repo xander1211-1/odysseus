@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "version": "live-20260619040908",
+  "generated_at": "2026-06-19T04:09:08.833219",
+  "entries": [
+    {
+      "version": "live-20260619040908",
+      "title": "Prototype live update test",
+      "description": "Prototype live update test: guest names are now supported.",
+      "date": "2026-06-19",
+      "platforms": [
+        "pwa",
+        "android",
+        "web"
+      ]
+    },
+    {
+      "version": "live-20260619040908",
+      "title": "Mobile shell test is ready",
+      "description": "Use this PWA view to check phone layout, touch targets, offline cache, and remote-only tool messaging before APK packaging.",
+      "date": "2026-06-17",
+      "platforms": [
+        "pwa",
+        "android"
+      ]
+    },
+    {
+      "version": "live-20260619040908",
+      "title": "Desktop tools stay visible",
+      "description": "Blender, Godot, and STL tools show synced logs/assets/results on mobile, but local execution is blocked on phone and must run on the desktop host.",
+      "date": "2026-06-17",
+      "platforms": [
+        "pwa",
+        "android"
+      ]
+    }
+  ]
+}
