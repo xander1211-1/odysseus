@@ -1,14 +1,14 @@
 {
   "ok": true,
-  "version": "live-20260619143214",
-  "generated_at": "2026-06-19T14:32:14.148260",
+  "version": "live-20260619143348",
+  "generated_at": "2026-06-19T14:33:48.030552",
   "notices": [
     {
       "id": "prototype-live-update-guest-names",
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T14:32:14.132816",
+      "published_at": "2026-06-19T14:33:48.019545",
       "platforms": [
         "pwa",
         "android",
@@ -22,7 +22,7 @@
       "title": "OmniVoice Studio provider added",
       "body": "Voice Studio now supports OmniVoice Studio as a local/free desktop-first voice workflow. Generate Lexi's voice in OmniVoice, export audio, import it into Voice Studio, then use it for voice testing or message playback. Android-native OmniVoice remains future until we confirm the engine can run or be called from Android.",
       "date": "2026-06-20",
-      "published_at": "2026-06-20T00:00:00+10:00",
+      "published_at": "2026-06-20T00:34:00+10:00",
       "platforms": [
         "android",
         "web"

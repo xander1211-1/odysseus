@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "version": "live-20260619143214",
-  "generated_at": "2026-06-19T14:32:14.148260",
+  "version": "live-20260619143348",
+  "generated_at": "2026-06-19T14:33:48.030552",
   "entries": [
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "Prototype live update test",
       "description": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "OmniVoice Studio provider added",
       "description": "Voice Studio now supports OmniVoice Studio as a local/free desktop-first voice workflow. Generate Lexi's voice in OmniVoice, export audio, import it into Voice Studio, then use it for voice testing or message playback. Android-native OmniVoice remains future until we confirm the engine can run or be called from Android.",
       "date": "2026-06-20",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "Voice Studio v0.1",
       "description": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
       "date": "2026-06-19",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "Live updates vs APK updates",
       "description": "Content, noticeboard, provider presets, and configuration can update live. Native/WebView fixes still require installing the latest APK when the manifest says an update is required.",
       "date": "2026-06-19",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "API key testing fix",
       "description": "API key testing has been improved. Provider tests now use safer defaults and accept valid provider responses even when the response body is unusual. Install the latest APK build for the Android-side bridge fix.",
       "date": "2026-06-19",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "Mobile shell test is ready",
       "description": "Use this PWA view to check phone layout, touch targets, offline cache, and remote-only tool messaging before APK packaging.",
       "date": "2026-06-17",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "version": "live-20260619143214",
+      "version": "live-20260619143348",
       "title": "Desktop tools stay visible",
       "description": "Blender, Godot, and STL tools show synced logs/assets/results on mobile, but local execution is blocked on phone and must run on the desktop host.",
       "date": "2026-06-17",
