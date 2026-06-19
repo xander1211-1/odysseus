@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619040908",
-  "version": "live-20260619040908",
-  "generated_at": "2026-06-19T04:09:08.833219",
-  "timestamp": "2026-06-19T04:09:08.833219",
+  "current_live_version": "live-20260619073214",
+  "version": "live-20260619073214",
+  "generated_at": "2026-06-19T07:32:14.243196",
+  "timestamp": "2026-06-19T07:32:14.243196",
   "message": "Live manifest loaded",
   "notices": [
     {
@@ -11,9 +11,22 @@
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T04:09:08.821195",
+      "published_at": "2026-06-19T07:32:14.233187",
       "platforms": [
         "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
+    {
+      "id": "prototype-api-key-test-fix",
+      "title": "API key testing fix",
+      "body": "API key testing has been improved. Provider tests now use safer defaults and accept valid provider responses even when the response body is unusual. Install the latest APK build for the Android-side bridge fix.",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T15:45:00+10:00",
+      "platforms": [
         "android",
         "web"
       ],
@@ -50,9 +63,22 @@
         "title": "Prototype live update test",
         "body": "Prototype live update test: guest names are now supported.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T04:09:08.821195",
+        "published_at": "2026-06-19T07:32:14.233187",
         "platforms": [
           "pwa",
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
+        "id": "prototype-api-key-test-fix",
+        "title": "API key testing fix",
+        "body": "API key testing has been improved. Provider tests now use safer defaults and accept valid provider responses even when the response body is unusual. Install the latest APK build for the Android-side bridge fix.",
+        "date": "2026-06-19",
+        "published_at": "2026-06-19T15:45:00+10:00",
+        "platforms": [
           "android",
           "web"
         ],
@@ -85,7 +111,7 @@
     "source": "mobile_shell_live_cache",
     "future_api": "/api/live/manifest",
     "poll_seconds": 30,
-    "live_notice_count": 1
+    "live_notice_count": 2
   },
   "feature_flags": {
     "guest_display_names": true,
