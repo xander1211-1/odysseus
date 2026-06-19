@@ -1,14 +1,14 @@
 {
   "ok": true,
-  "version": "live-20260619162138",
-  "generated_at": "2026-06-19T16:21:38.004389",
+  "version": "live-20260619170147",
+  "generated_at": "2026-06-19T17:01:47.264835",
   "notices": [
     {
-      "id": "model-mode-v11-native-downloads",
-      "title": "Model Mode v1.1: real local model downloads",
-      "body": "Lite and Balanced now use real Qwen3 GGUF download entries. Install the latest APK to download into app-private storage, see byte progress, cancel or retry, switch safely, and keep chats, memories, themes, characters, and BYOK settings untouched. Local inference runtime is still not wired, so installed models are shown honestly as files ready for the next runtime update.",
+      "id": "model-mode-v12-downloadmanager",
+      "title": "Model Mode v1.2: background model downloads",
+      "body": "The latest APK uses Android DownloadManager for model downloads, including progress notifications and persistence across app restarts. Model Mode now distinguishes Active, Installed, and downloadable models; it also reconciles completed files on launch and keeps local-runtime status explicit.",
       "date": "2026-06-20",
-      "published_at": "2026-06-20T02:25:00+10:00",
+      "published_at": "2026-06-20T03:05:00+10:00",
       "platforms": [
         "android",
         "web"
@@ -21,7 +21,7 @@
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T16:21:13.566813",
+      "published_at": "2026-06-19T17:01:29.491535",
       "platforms": [
         "pwa",
         "android",
@@ -29,6 +29,19 @@
       ],
       "severity": "info",
       "required": false
+    },
+    {
+      "id": "model-mode-v11-native-downloads",
+      "title": "Model Mode v1.1: real local model downloads",
+      "body": "Lite and Balanced now use real Qwen3 GGUF download entries. Install the latest APK to download into app-private storage, see byte progress, cancel or retry, switch safely, and keep chats, memories, themes, characters, and BYOK settings untouched. Local inference runtime is still not wired, so installed models are shown honestly as files ready for the next runtime update.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T02:25:00+10:00",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": true
     },
     {
       "id": "model-mode-v1-functional",
