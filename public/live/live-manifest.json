@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619075501",
-  "version": "live-20260619075501",
-  "generated_at": "2026-06-19T07:55:01.213285",
-  "timestamp": "2026-06-19T07:55:01.213285",
+  "current_live_version": "live-20260619075743",
+  "version": "live-20260619075743",
+  "generated_at": "2026-06-19T07:57:43.199340",
+  "timestamp": "2026-06-19T07:57:43.199340",
   "message": "Live manifest loaded",
   "notices": [
     {
@@ -11,7 +11,7 @@
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:54:55.076971",
+      "published_at": "2026-06-19T07:57:17.246021",
       "platforms": [
         "pwa",
         "android",
@@ -76,7 +76,7 @@
         "title": "Prototype live update test",
         "body": "Prototype live update test: guest names are now supported.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T07:54:55.076971",
+        "published_at": "2026-06-19T07:57:17.246021",
         "platforms": [
           "pwa",
           "android",
@@ -191,7 +191,7 @@
   "required_min_client_version": "Prototype 0.1",
   "recommended_apk_version": "Prototype 0.1",
   "recommended_client_version": "Prototype 0.1",
-  "apk_download_url": "https://github.com/xander1211-1/odysseus/raw/main/exports/android/Lexi_Companion_Prototype_0.1.apk",
+  "apk_download_url": "https://raw.githubusercontent.com/xander1211-1/odysseus/main/exports/android/Lexi_Companion_Prototype_0.1.apk",
   "update_policy": {
     "content_config_live_update": true,
     "native_webview_code_requires_apk": true,
