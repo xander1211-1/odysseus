@@ -1,11 +1,38 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619145345",
-  "version": "live-20260619145345",
-  "generated_at": "2026-06-19T14:53:45.100449",
-  "timestamp": "2026-06-19T14:53:45.100449",
+  "current_live_version": "live-20260619150711",
+  "version": "live-20260619150711",
+  "generated_at": "2026-06-19T15:07:11.569185",
+  "timestamp": "2026-06-19T15:07:11.569185",
   "message": "Live manifest loaded",
   "notices": [
+    {
+      "id": "prototype-live-update-guest-names",
+      "title": "Prototype live update test",
+      "body": "Prototype live update test: guest names are now supported.",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T15:07:11.556959",
+      "platforms": [
+        "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
+    {
+      "id": "model-mode-v1-functional",
+      "title": "Model Mode v1 is now functional",
+      "body": "Model Mode now uses a live model catalog. Lite and Balanced show clean Coming Soon states until real local packages are published, Creator can select BYOK/provider mode, and Hybrid can select the router profile. Downloadable local models will only install after a real download and verification.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T01:07:00+10:00",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "model-mode-v1",
       "title": "Model Mode v1 added",
@@ -97,6 +124,33 @@
   "noticeboard": {
     "notices": [
       {
+        "id": "prototype-live-update-guest-names",
+        "title": "Prototype live update test",
+        "body": "Prototype live update test: guest names are now supported.",
+        "date": "2026-06-19",
+        "published_at": "2026-06-19T15:07:11.556959",
+        "platforms": [
+          "pwa",
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
+        "id": "model-mode-v1-functional",
+        "title": "Model Mode v1 is now functional",
+        "body": "Model Mode now uses a live model catalog. Lite and Balanced show clean Coming Soon states until real local packages are published, Creator can select BYOK/provider mode, and Hybrid can select the router profile. Downloadable local models will only install after a real download and verification.",
+        "date": "2026-06-20",
+        "published_at": "2026-06-20T01:07:00+10:00",
+        "platforms": [
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
         "id": "model-mode-v1",
         "title": "Model Mode v1 added",
         "body": "Model Mode is now a full install and management screen with Lite, Balanced, Creator, and Hybrid profiles, device recommendation, install progress, switching, and advanced model controls. Install the latest APK for the new UI code.",
@@ -187,7 +241,7 @@
     "source": "mobile_shell_live_cache",
     "future_api": "/api/live/manifest",
     "poll_seconds": 30,
-    "live_notice_count": 5
+    "live_notice_count": 7
   },
   "feature_flags": {
     "guest_display_names": true,
@@ -396,6 +450,8 @@
     "noticeboard": "noticeboard.json",
     "changelog": "changelog.json",
     "feature_flags": "feature-flags.json",
-    "provider_presets": "provider-presets.json"
-  }
+    "provider_presets": "provider-presets.json",
+    "model_catalog": "model-catalog.json"
+  },
+  "model_catalog_url": "model-catalog.json"
 }

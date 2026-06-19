@@ -1,0 +1,104 @@
+{
+  "ok": true,
+  "schema_version": "model_catalog.v1",
+  "version": "model-catalog-20260619150711",
+  "generated_at": "2026-06-19T15:07:11.569185",
+  "models": [
+    {
+      "id": "lite-qwen35-4b-mobile-q4",
+      "profile": "lite",
+      "display_name": "Lite Local Model",
+      "description": "Smallest offline local model profile for older phones. Add a GGUF/package URL when ready.",
+      "provider_type": "coming_soon",
+      "download_url": "",
+      "file_name": "lexi-lite-qwen35-4b-q4.gguf",
+      "size_bytes": 0,
+      "checksum_sha256": "",
+      "min_ram_gb": 6,
+      "recommended_ram_gb": 8,
+      "quantization": "Q4 mobile",
+      "context_length": 4096,
+      "runtime": "llama.cpp",
+      "status": "coming_soon",
+      "features": [
+        "Offline",
+        "Fast responses",
+        "Low battery usage",
+        "Small storage footprint",
+        "Everyday conversations"
+      ]
+    },
+    {
+      "id": "balanced-qwen35-mobile-q4km",
+      "profile": "balanced",
+      "display_name": "Balanced Local Model",
+      "description": "Recommended offline local profile. Add a downloadable package URL when the mobile runtime is ready.",
+      "provider_type": "coming_soon",
+      "download_url": "",
+      "file_name": "lexi-balanced-qwen35-q4-k-m.gguf",
+      "size_bytes": 0,
+      "checksum_sha256": "",
+      "min_ram_gb": 8,
+      "recommended_ram_gb": 12,
+      "quantization": "Q4_K_M",
+      "context_length": 8192,
+      "runtime": "llama.cpp",
+      "status": "coming_soon",
+      "features": [
+        "Better reasoning",
+        "Better creativity",
+        "Better coding",
+        "Better memory",
+        "Offline"
+      ]
+    },
+    {
+      "id": "creator-byok",
+      "profile": "creator",
+      "display_name": "Creator BYOK",
+      "description": "Creator profile using BYOK/cloud providers and future desktop tools. No local model download required.",
+      "provider_type": "byok",
+      "download_url": "",
+      "file_name": "",
+      "size_bytes": 0,
+      "checksum_sha256": "",
+      "min_ram_gb": 4,
+      "recommended_ram_gb": 8,
+      "quantization": "provider dependent",
+      "context_length": 0,
+      "runtime": "none",
+      "status": "available",
+      "features": [
+        "Blender tools",
+        "Godot tools",
+        "Coding assistance",
+        "MCP integration",
+        "BYOK",
+        "Advanced workflows"
+      ]
+    },
+    {
+      "id": "hybrid-router",
+      "profile": "hybrid",
+      "display_name": "Hybrid Router",
+      "description": "Routes simple tasks locally when a local model exists and complex tasks to BYOK/cloud when configured.",
+      "provider_type": "external",
+      "download_url": "",
+      "file_name": "",
+      "size_bytes": 0,
+      "checksum_sha256": "",
+      "min_ram_gb": 8,
+      "recommended_ram_gb": 12,
+      "quantization": "router",
+      "context_length": 0,
+      "runtime": "custom",
+      "status": "experimental",
+      "features": [
+        "Automatic routing",
+        "Local-first",
+        "Cloud when needed",
+        "Intelligent task selection"
+      ]
+    }
+  ]
+}
