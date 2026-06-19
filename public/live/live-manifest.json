@@ -1,17 +1,31 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619091347",
-  "version": "live-20260619091347",
-  "generated_at": "2026-06-19T09:13:47.896673",
-  "timestamp": "2026-06-19T09:13:47.896673",
+  "current_live_version": "live-20260619143214",
+  "version": "live-20260619143214",
+  "generated_at": "2026-06-19T14:32:14.148260",
+  "timestamp": "2026-06-19T14:32:14.148260",
   "message": "Live manifest loaded",
   "notices": [
     {
-      "id": "voice-studio-v01",
-      "title": "Voice Studio v0.1",
-      "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
+      "id": "prototype-live-update-guest-names",
+      "title": "Prototype live update test",
+      "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T19:12:00+10:00",
+      "published_at": "2026-06-19T14:32:14.132816",
+      "platforms": [
+        "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
+    {
+      "id": "omnivoice-studio-provider",
+      "title": "OmniVoice Studio provider added",
+      "body": "Voice Studio now supports OmniVoice Studio as a local/free desktop-first voice workflow. Generate Lexi's voice in OmniVoice, export audio, import it into Voice Studio, then use it for voice testing or message playback. Android-native OmniVoice remains future until we confirm the engine can run or be called from Android.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T00:00:00+10:00",
       "platforms": [
         "android",
         "web"
@@ -20,13 +34,12 @@
       "required": false
     },
     {
-      "id": "prototype-live-update-guest-names",
-      "title": "Prototype live update test",
-      "body": "Prototype live update test: guest names are now supported.",
+      "id": "voice-studio-v01",
+      "title": "Voice Studio v0.1",
+      "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T09:13:29.048057",
+      "published_at": "2026-06-19T19:12:00+10:00",
       "platforms": [
-        "pwa",
         "android",
         "web"
       ],
@@ -85,11 +98,25 @@
   "noticeboard": {
     "notices": [
       {
-        "id": "voice-studio-v01",
-        "title": "Voice Studio v0.1",
-        "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
+        "id": "prototype-live-update-guest-names",
+        "title": "Prototype live update test",
+        "body": "Prototype live update test: guest names are now supported.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T19:12:00+10:00",
+        "published_at": "2026-06-19T14:32:14.132816",
+        "platforms": [
+          "pwa",
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
+        "id": "omnivoice-studio-provider",
+        "title": "OmniVoice Studio provider added",
+        "body": "Voice Studio now supports OmniVoice Studio as a local/free desktop-first voice workflow. Generate Lexi's voice in OmniVoice, export audio, import it into Voice Studio, then use it for voice testing or message playback. Android-native OmniVoice remains future until we confirm the engine can run or be called from Android.",
+        "date": "2026-06-20",
+        "published_at": "2026-06-20T00:00:00+10:00",
         "platforms": [
           "android",
           "web"
@@ -98,13 +125,12 @@
         "required": false
       },
       {
-        "id": "prototype-live-update-guest-names",
-        "title": "Prototype live update test",
-        "body": "Prototype live update test: guest names are now supported.",
+        "id": "voice-studio-v01",
+        "title": "Voice Studio v0.1",
+        "body": "Voice Studio is now wired for per-character voice settings, provider presets, Test Voice, speaker buttons, and optional autoplay. Install the latest APK for the new mobile UI code; future provider preset changes can arrive live.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T09:13:29.048057",
+        "published_at": "2026-06-19T19:12:00+10:00",
         "platforms": [
-          "pwa",
           "android",
           "web"
         ],
@@ -163,7 +189,7 @@
     "source": "mobile_shell_live_cache",
     "future_api": "/api/live/manifest",
     "poll_seconds": 30,
-    "live_notice_count": 4
+    "live_notice_count": 5
   },
   "feature_flags": {
     "guest_display_names": true,
@@ -308,6 +334,30 @@
         "mp3"
       ],
       "browser_strategy": "placeholder"
+    },
+    {
+      "id": "omnivoice_studio",
+      "label": "OmniVoice Studio",
+      "status": "desktop_first",
+      "requires_api_key": false,
+      "base_url": "",
+      "endpoint": "/tts",
+      "default_model": "",
+      "default_voice": "lexi-omnivoice",
+      "formats": [
+        "mp3",
+        "wav",
+        "ogg"
+      ],
+      "browser_strategy": "imported_audio_or_local_endpoint",
+      "android_native": "future_until_confirmed",
+      "workflow": [
+        "Generate Lexi voice in OmniVoice",
+        "Export voice sample/audio",
+        "Import into Lexi Voice Studio",
+        "Use for message playback or voice testing"
+      ],
+      "description": "OmniVoice is local/free, but mobile support depends on whether we can run or call the engine from Android."
     },
     {
       "id": "custom_endpoint",

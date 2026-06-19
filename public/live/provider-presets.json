@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "version": "live-20260619091347",
-  "generated_at": "2026-06-19T09:13:47.896673",
+  "version": "live-20260619143214",
+  "generated_at": "2026-06-19T14:32:14.148260",
   "providers": [
     {
       "id": "openrouter",
@@ -85,6 +85,30 @@
         "mp3"
       ],
       "browser_strategy": "placeholder"
+    },
+    {
+      "id": "omnivoice_studio",
+      "label": "OmniVoice Studio",
+      "status": "desktop_first",
+      "requires_api_key": false,
+      "base_url": "",
+      "endpoint": "/tts",
+      "default_model": "",
+      "default_voice": "lexi-omnivoice",
+      "formats": [
+        "mp3",
+        "wav",
+        "ogg"
+      ],
+      "browser_strategy": "imported_audio_or_local_endpoint",
+      "android_native": "future_until_confirmed",
+      "workflow": [
+        "Generate Lexi voice in OmniVoice",
+        "Export voice sample/audio",
+        "Import into Lexi Voice Studio",
+        "Use for message playback or voice testing"
+      ],
+      "description": "OmniVoice is local/free, but mobile support depends on whether we can run or call the engine from Android."
     },
     {
       "id": "custom_endpoint",
