@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619073214",
-  "version": "live-20260619073214",
-  "generated_at": "2026-06-19T07:32:14.243196",
-  "timestamp": "2026-06-19T07:32:14.243196",
+  "current_live_version": "live-20260619075501",
+  "version": "live-20260619075501",
+  "generated_at": "2026-06-19T07:55:01.213285",
+  "timestamp": "2026-06-19T07:55:01.213285",
   "message": "Live manifest loaded",
   "notices": [
     {
@@ -11,9 +11,22 @@
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:32:14.233187",
+      "published_at": "2026-06-19T07:54:55.076971",
       "platforms": [
         "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
+    {
+      "id": "prototype-update-policy",
+      "title": "Live updates vs APK updates",
+      "body": "Content, noticeboard, provider presets, and configuration can update live. Native/WebView fixes still require installing the latest APK when the manifest says an update is required.",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T17:55:00+10:00",
+      "platforms": [
         "android",
         "web"
       ],
@@ -63,9 +76,22 @@
         "title": "Prototype live update test",
         "body": "Prototype live update test: guest names are now supported.",
         "date": "2026-06-19",
-        "published_at": "2026-06-19T07:32:14.233187",
+        "published_at": "2026-06-19T07:54:55.076971",
         "platforms": [
           "pwa",
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
+        "id": "prototype-update-policy",
+        "title": "Live updates vs APK updates",
+        "body": "Content, noticeboard, provider presets, and configuration can update live. Native/WebView fixes still require installing the latest APK when the manifest says an update is required.",
+        "date": "2026-06-19",
+        "published_at": "2026-06-19T17:55:00+10:00",
+        "platforms": [
           "android",
           "web"
         ],
@@ -111,7 +137,7 @@
     "source": "mobile_shell_live_cache",
     "future_api": "/api/live/manifest",
     "poll_seconds": 30,
-    "live_notice_count": 2
+    "live_notice_count": 3
   },
   "feature_flags": {
     "guest_display_names": true,
@@ -160,8 +186,51 @@
   "ui_layout_config": {
     "mobile_router": "in_app"
   },
+  "app_version": "Prototype 0.1",
+  "required_apk_version": "Prototype 0.1",
   "required_min_client_version": "Prototype 0.1",
-  "recommended_client_version": "Prototype 0.3",
+  "recommended_apk_version": "Prototype 0.1",
+  "recommended_client_version": "Prototype 0.1",
+  "apk_download_url": "https://github.com/xander1211-1/odysseus/raw/main/exports/android/Lexi_Companion_Prototype_0.1.apk",
+  "update_policy": {
+    "content_config_live_update": true,
+    "native_webview_code_requires_apk": true,
+    "native_bridge_scope": [
+      "local_storage",
+      "file_picker_future",
+      "permissions",
+      "notifications_future",
+      "local_model_future"
+    ]
+  },
+  "provider_test_config": {
+    "strategy": "direct_fetch_first",
+    "proxy_url": "",
+    "proxy_method": "POST",
+    "cors_fallback": "If provider CORS blocks WebView fetch, use proxy_url from live manifest or the legacy native bridge.",
+    "providers": {
+      "openrouter": {
+        "base_url": "https://openrouter.ai/api/v1",
+        "endpoint": "/chat/completions",
+        "default_model": "openai/gpt-4o-mini"
+      },
+      "openai": {
+        "base_url": "https://api.openai.com/v1",
+        "endpoint": "/chat/completions",
+        "default_model": "gpt-4o-mini"
+      },
+      "anthropic": {
+        "base_url": "https://api.anthropic.com",
+        "endpoint": "/v1/messages",
+        "default_model": "claude-3-5-haiku-latest"
+      },
+      "gemini": {
+        "base_url": "https://generativelanguage.googleapis.com",
+        "endpoint": "/v1beta/models",
+        "default_model": "gemini-1.5-flash"
+      }
+    }
+  },
   "poll_seconds": 30,
   "static_files": {
     "manifest": "live-manifest.json",

@@ -1,16 +1,29 @@
 {
   "ok": true,
-  "version": "live-20260619073214",
-  "generated_at": "2026-06-19T07:32:14.243196",
+  "version": "live-20260619075501",
+  "generated_at": "2026-06-19T07:55:01.213285",
   "notices": [
     {
       "id": "prototype-live-update-guest-names",
       "title": "Prototype live update test",
       "body": "Prototype live update test: guest names are now supported.",
       "date": "2026-06-19",
-      "published_at": "2026-06-19T07:32:14.233187",
+      "published_at": "2026-06-19T07:54:55.076971",
       "platforms": [
         "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
+    {
+      "id": "prototype-update-policy",
+      "title": "Live updates vs APK updates",
+      "body": "Content, noticeboard, provider presets, and configuration can update live. Native/WebView fixes still require installing the latest APK when the manifest says an update is required.",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T17:55:00+10:00",
+      "platforms": [
         "android",
         "web"
       ],
