@@ -1,11 +1,25 @@
 {
   "ok": true,
-  "current_live_version": "live-20260619170147",
-  "version": "live-20260619170147",
-  "generated_at": "2026-06-19T17:01:47.264835",
-  "timestamp": "2026-06-19T17:01:47.264835",
+  "current_live_version": "live-20260620010900",
+  "version": "live-20260620010900",
+  "generated_at": "2026-06-20T01:09:00.237275",
+  "timestamp": "2026-06-20T01:09:00.237275",
   "message": "Live manifest loaded",
   "notices": [
+    {
+      "id": "prototype-live-update-guest-names",
+      "title": "Prototype live update test",
+      "body": "Prototype live update test: guest names are now supported.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T01:08:59.676558",
+      "platforms": [
+        "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "model-mode-v12-downloadmanager",
       "title": "Model Mode v1.2: background model downloads",
@@ -18,20 +32,6 @@
       ],
       "severity": "info",
       "required": true
-    },
-    {
-      "id": "prototype-live-update-guest-names",
-      "title": "Prototype live update test",
-      "body": "Prototype live update test: guest names are now supported.",
-      "date": "2026-06-19",
-      "published_at": "2026-06-19T17:01:29.491535",
-      "platforms": [
-        "pwa",
-        "android",
-        "web"
-      ],
-      "severity": "info",
-      "required": false
     },
     {
       "id": "model-mode-v11-native-downloads",
@@ -150,6 +150,20 @@
   "noticeboard": {
     "notices": [
       {
+        "id": "prototype-live-update-guest-names",
+        "title": "Prototype live update test",
+        "body": "Prototype live update test: guest names are now supported.",
+        "date": "2026-06-20",
+        "published_at": "2026-06-20T01:08:59.676558",
+        "platforms": [
+          "pwa",
+          "android",
+          "web"
+        ],
+        "severity": "info",
+        "required": false
+      },
+      {
         "id": "model-mode-v12-downloadmanager",
         "title": "Model Mode v1.2: background model downloads",
         "body": "The latest APK uses Android DownloadManager for model downloads, including progress notifications and persistence across app restarts. Model Mode now distinguishes Active, Installed, and downloadable models; it also reconciles completed files on launch and keeps local-runtime status explicit.",
@@ -161,20 +175,6 @@
         ],
         "severity": "info",
         "required": true
-      },
-      {
-        "id": "prototype-live-update-guest-names",
-        "title": "Prototype live update test",
-        "body": "Prototype live update test: guest names are now supported.",
-        "date": "2026-06-19",
-        "published_at": "2026-06-19T17:01:29.491535",
-        "platforms": [
-          "pwa",
-          "android",
-          "web"
-        ],
-        "severity": "info",
-        "required": false
       },
       {
         "id": "model-mode-v11-native-downloads",
@@ -344,12 +344,12 @@
   "ui_layout_config": {
     "mobile_router": "in_app"
   },
-  "app_version": "Prototype 0.1",
-  "required_apk_version": "Prototype 0.1",
-  "required_min_client_version": "Prototype 0.1",
-  "recommended_apk_version": "Prototype 0.1",
-  "recommended_client_version": "Prototype 0.1",
-  "apk_download_url": "https://raw.githubusercontent.com/xander1211-1/odysseus/main/exports/android/Lexi_Companion_Prototype_0.1.apk",
+  "app_version": "Prototype 0.2",
+  "required_apk_version": "Prototype 0.2",
+  "required_min_client_version": "Prototype 0.2",
+  "recommended_apk_version": "Prototype 0.2",
+  "recommended_client_version": "Prototype 0.2",
+  "apk_download_url": "https://raw.githubusercontent.com/xander1211-1/odysseus/main/exports/android/Lexi_Companion_Prototype_0.2.apk",
   "update_policy": {
     "content_config_live_update": true,
     "native_webview_code_requires_apk": true,

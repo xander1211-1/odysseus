@@ -1,8 +1,22 @@
 {
   "ok": true,
-  "version": "live-20260619170147",
-  "generated_at": "2026-06-19T17:01:47.264835",
+  "version": "live-20260620010900",
+  "generated_at": "2026-06-20T01:09:00.237275",
   "notices": [
+    {
+      "id": "prototype-live-update-guest-names",
+      "title": "Prototype live update test",
+      "body": "Prototype live update test: guest names are now supported.",
+      "date": "2026-06-20",
+      "published_at": "2026-06-20T01:08:59.676558",
+      "platforms": [
+        "pwa",
+        "android",
+        "web"
+      ],
+      "severity": "info",
+      "required": false
+    },
     {
       "id": "model-mode-v12-downloadmanager",
       "title": "Model Mode v1.2: background model downloads",
@@ -15,20 +29,6 @@
       ],
       "severity": "info",
       "required": true
-    },
-    {
-      "id": "prototype-live-update-guest-names",
-      "title": "Prototype live update test",
-      "body": "Prototype live update test: guest names are now supported.",
-      "date": "2026-06-19",
-      "published_at": "2026-06-19T17:01:29.491535",
-      "platforms": [
-        "pwa",
-        "android",
-        "web"
-      ],
-      "severity": "info",
-      "required": false
     },
     {
       "id": "model-mode-v11-native-downloads",

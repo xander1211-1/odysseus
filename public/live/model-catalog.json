@@ -1,8 +1,8 @@
 {
   "ok": true,
   "schema_version": "model_catalog.v1",
-  "version": "model-catalog-20260619170147",
-  "generated_at": "2026-06-19T17:01:47.264835",
+  "version": "model-catalog-20260620010900",
+  "generated_at": "2026-06-20T01:09:00.237275",
   "models": [
     {
       "id": "lite-qwen35-4b-mobile-q4",
