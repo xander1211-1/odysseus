@@ -1,3 +1,4 @@
 exports/android/Lexi_Companion_Prototype_0.3.apk filter=lfs diff=lfs merge=lfs -text
 exports/android/Lexi_Companion_Prototype_0.4.apk filter=lfs diff=lfs merge=lfs -text
 exports/android/Lexi_Companion_Prototype_0.5.apk filter=lfs diff=lfs merge=lfs -text
+exports/android/*.apk filter=lfs diff=lfs merge=lfs -text
