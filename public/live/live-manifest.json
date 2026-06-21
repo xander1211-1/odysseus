@@ -344,12 +344,12 @@
   "ui_layout_config": {
     "mobile_router": "in_app"
   },
-  "app_version": "Prototype 0.9",
-  "required_apk_version": "Prototype 0.9",
-  "required_min_client_version": "Prototype 0.9",
-  "recommended_apk_version": "Prototype 0.9",
-  "recommended_client_version": "Prototype 0.9",
-  "apk_download_url": "https://media.githubusercontent.com/media/xander1211-1/odysseus/main/exports/android/Lexi_Companion_Prototype_0.9.apk",
+  "app_version": "Prototype 0.10",
+  "required_apk_version": "Prototype 0.10",
+  "required_min_client_version": "Prototype 0.10",
+  "recommended_apk_version": "Prototype 0.10",
+  "recommended_client_version": "Prototype 0.10",
+  "apk_download_url": "https://media.githubusercontent.com/media/xander1211-1/odysseus/main/exports/android/Lexi_Companion_Prototype_0.10.apk",
   "update_policy": {
     "content_config_live_update": true,
     "native_webview_code_requires_apk": true,
